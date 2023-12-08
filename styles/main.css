@@ -1,59 +1,84 @@
 * {
     margin: 0px;
 }
-#client_info {
-    margin-top: 10px;
-    margin-left: 10px;
-    height: 250px; /* Chiều cao là 200 pixel */
-    width: 400px;  /* Chiều rộng là 300 pixel */
+
+#clients {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#clients-info-contenter{
+    margin-top: 20px;
+    display: grid;
+    height: 350px;
+    grid-template-rows: 120px auto auto;
+    background-color: rgb(219, 216, 216);
+}
+.container-img{
+    position: relative;
     display: flex;
-    /* align-items: center */
+    justify-content: center;
+    align-items: center;
 }
-
-
-#client_info img{
-    height: 200px;
-    width: 200px; 
-    object-fit: contain;
-}
-
-#client_info .choose_name_button{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 10px;
-}
-
-#client_info .choose_name_button .name_button{
-    height: 30px;
-    width: 200px;
-    margin-top: 10px;
-}
-
-
-#client_info #client_info_footer p {
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#client_info #client_info_footer .add_button {
-    width: 50px;
-    margin-right: 5px;
-    background-color: green;
-    color:aliceblue;
-}
-
-#client_info #client_info_footer input {
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-#client_info #client_info_footer .delete_button {
-    height: 25px;
+img{
+    height: 100px;
     width: 100px;
-    margin-top: 5px;
+    object-fit: cover;
+}
+.container-img button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 45px;
+    width: 45px;
+    background-image: url("../images/icons/delete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+}
+.container-img button:hover{
+    opacity: 0.5;
     background-color: red;
-    color:aliceblue;
 }
 
+.container-name-buttons{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+}
+
+.container-name-button{
+    display: flex;
+    justify-content: center;
+}
+.container-name-button button{
+    width: 200px;
+    margin-top: 5px;
+}
+.container-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-input input{
+    width: 200px;
+    height: 20px;
+    padding: 0px;
+}
+
+.container-add-button{
+    margin-top: 10px;
+    position: relative;
+}
+
+.container-add-button button{
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    left: 60%;
+}

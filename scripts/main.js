@@ -1,17 +1,37 @@
-// // Mảng chứa thông tin về các ảnh và tên
-// const clientData = [
-//     { imagePath: 'images/bui_the_anh.png', name1: 'Bùi Thế Anh', name2: 'Bùi Thị Thu Trang', name3:'Bùi Thị Thùy Trang' },
-//     { imagePath: 'images/bui_thi_thu_trang.png', name1: 'Bùi Thế 1', name2: 'Bùi Thị Thu 1', name3:'Bùi Thị Thùy 1' },
-//     // Thêm các phần tử khác nếu cần
-// ];
+import { faces } from "../data/faces.js";
+let facesHTML = '';
 
-// clientData.forEach(data => {
-//     // Tạo thẻ div mới cho mỗi ảnh và tên
-//     const clientInfoDiv = document.createElement('div');
-//     clientInfoDiv.id = 'client_info';
+faces.forEach((face) => {
+    facesHTML += `
+        <div id="clients-info-contenter">
+            <div class="container-img">
+                <img src="${face.image}" alt="">
+                <button></button>
+            </div>
 
-//     const img = document.createElement('img');
-//     img.src = data.imagePath;
-//     img.alt = '';
+            <div class="container-name-buttons">
+                <div class="container-name-button">
+                    <button>${face.names[0]}</button>
+                </div>
+                <div class="container-name-button">
+                    <button>${face.names[1]}</button>
+                </div>
+                <div class="container-name-button">
+                    <button>${face.names[2]}</button>
+                </div>
+                
+            </div>
+            <div class="container-footer">
+                <div class="container-input">
+                    <input type="text" placeholder="Input name">
+                </div>
+                <div class="container-add-button">
+                    <button>Add</button>
+                </div>
+                
+            </div>
+        </div>`
+})
 
-// })
+console.log()
+document.querySelector("#clients").innerHTML = facesHTML;
