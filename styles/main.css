@@ -38,7 +38,7 @@ img{
     background-image: url("../images/icons/delete.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 0px;
+    border: 2px;
 }
 .container-img button:hover{
     opacity: 0.5;
