@@ -11,7 +11,100 @@
     row-gap: 10px;
 }
 
-#clients-info-contenter{
+#container  {
+    display: grid;
+    grid-template-rows: 1fr 19fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#client-info-container  {
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.delete-button-container {
+    position: relative;
+}
+
+.delete-button-container button {
+    position: absolute;
+    right: 0px;
+}
+
+.container-img{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.know-image-containers{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.know-image-container{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 2px;
+}
+
+.know-image-container img{
+    width: 100px;
+    height: 100px;
+}
+
+.container-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+.main-image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-image-container img{
+    width: 250px;
+    height: 250px;
+}
+
+.know-image{
+    display: flex;
+    justify-content: center;
+}
+
+.know-name{
+    display: flex;
+    justify-content: center;
+}
+
+.container-input-name{
+    display: flex;
+    justify-content: center;
+}
+
+.container-add-button{
+    display: flex;
+    justify-content: center;
+}
+
+.container-add-button button{
+    height: 25px;
+    width: 60px;
+}
+
+/* #clients-info-contenter{
     margin-top: 20px;
     display: grid;
     height: 350px;
@@ -81,4 +174,4 @@ img{
     height: 30px;
     width: 60px;
     left: 60%;
-}
+} */
